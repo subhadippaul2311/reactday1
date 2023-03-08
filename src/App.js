@@ -1,31 +1,27 @@
 //import logo from './logo.svg';
-import './App.css';
- import {H1} from './H1';
- import {H2} from './H2';
- import {H3} from './H3';
- import {Button} from './Button'
+//import './App.css';
+import './Registration.css'
+ import{Registration} from './Registration.js'
+ import {Input} from './input.js'
+ import {Button} from './Button2.js'
 
 function App() {
+  const register="Register ..."
+  const button="Submit"
   return (
-    // <>
-    // <h1>I am heading one</h1>
-    // <h2> I am heading two</h2>
-    // <h3>I am heading three</h3>
-    // <button>Click Me !!</button>
     
-    // </>
-    // <>
-  <>
-    <H1/>
-    <H2/>
-    <H3/>
-    <Button/>
-
-    </>
+    // <div class="Registration">
+    // <h1 class="H1">Register here ...</h1>
+    //  <input class="Mobile" type="text" placeholder=" mobile ..."></input><br></br>
+    //  <input class="Password" type="password" placeholder=" password ..."></input>
+    //  <button>Submit</button>
+    //  </div>
     
-    
-    // </>
-    
+    <>
+<Registration registration={register}/>
+<Input/>
+<Button button={button}/>
+   </> 
   );
 }
 
