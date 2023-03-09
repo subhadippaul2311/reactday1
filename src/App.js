@@ -1,27 +1,29 @@
 //import logo from './logo.svg';
 //import './App.css';
-import './Registration.css'
- import{Registration} from './Registration.js'
- import {Input} from './input.js'
- import {Button} from './Button2.js'
+import './Card.css'
+import {Card} from './Card.js'
+
 
 function App() {
-  const register="Register ..."
-  const button="Submit"
+   const image="https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg"
+   const name="Amit"
+   const description="Highly creative and multitalented Graphic Designer with extensive experience in multimedia, marketing, and print design."
+const designation="Graphic Designer"
+
   return (
     
-    // <div class="Registration">
-    // <h1 class="H1">Register here ...</h1>
-    //  <input class="Mobile" type="text" placeholder=" mobile ..."></input><br></br>
-    //  <input class="Password" type="password" placeholder=" password ..."></input>
-    //  <button>Submit</button>
-    //  </div>
+    <div>
+    <Card image={image} name={name} description={description} designation={designation}/>
+    <Card
+     image="https://images.pexels.com/photos/3775131/pexels-photo-3775131.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+     name="Ruhi"
+     description="perform a variety of music for recordings and live audiences. They audition for positions in choruses, orchestras, bands, plays,
+    	           and other types of music groups. "
+    designation="Singer"             
+    />
     
-    <>
-<Registration registration={register}/>
-<Input/>
-<Button button={button}/>
-   </> 
+    </div>
+
   );
 }
 
